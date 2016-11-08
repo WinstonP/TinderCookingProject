@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Dinner</title>
+<!--Layout-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+MS">
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Comic Sans MS", cursive, sans-serif}
+    .w3-sidenav a {padding:20px}
+    body {background-color: crimson;
+    }
+    h1 {
+    text-align: center;
+    color: orange
+    }
+    #rcorners1{
+    border-radius:50px;
+    padding: 20px;
+
+    }
+
+</style>
+
+<body>
+
+<!-- Side navigation -->
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-right" style="display:none;z-index:2;width:20%;min-width:100px;position:absolute;right:0" id="mySidenav"> <!-- position absolute right forces thing to right so many pixels i.e. 0-->
+    <a href="javascript:void(0)" onclick="w3_close()"
+       class="w3-closenav">Close Menu</a>
+    <a href="#opt1" onclick="w3_close()">Option One</a>
+    <a href="thepage.html" onclick="w3_close()">Main Menu</a>
+
+</nav>
+
+<!--Heading of website-->
+<div class="w3-top">
+    <div class="w3-crimson w3-xlarge w3-padding-xlarge" style="max-width:1200px;margin:auto;position:absolute;left">
+        <div class="w3-opennav w3-left w3-hover-text-grey" onclick="w3_open()">☰</div>
+        <div class="w3-center"><h1>Dinner</h1></div>
+        <h4>You're probably hungry</h4>
+    </div>
+
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!--Food options-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+        <div class="w3-rest">
+            <img id="rcorners1" src="/Hackathon/Food/food10.jpg" alt="Dinner Option 1" style="width:75%">
+        </div>
+
+    </div>
+
+    <!--Option One -->
+    <hr id="opt1">
+
+    <div class="w3-container w3-padding-32 w3-center">
+        <h3>Option One</h3><br>
+        <img src="/Hackathon/spaghetti.png" alt="Dinner Option 1" style="display:block;margin:auto" width="500" height="200">
+        <div class="w3-padding-32">
+            <h4><b>This is your first dinner option</b></h4>
+            <h6><i>Minimal effort</i></h6>
+            <h4>Ingredients</h4>
+            <p>1 lb. ground beef</p>
+            <p>2 tbsp. water</p>
+            <p>1/3 cup seasoned dry bread crumbs</p>
+            <p>1 egg, beaten</p>
+            <p>1 jar of tomato sauce</p>
+            <p>8 ounces of cooked spaghetti pasta</p>
+            <h4>Directions</h4>
+            <p>1. Mix the ground beef, water, bread crumbs, and egg. Shape into 12 (2 inch) meatballs.</p>
+            <p>2. Arrange the meatballs in a microwavable baking dish.</p>
+            <p>3. Microwave on HIGH for 5 minutes or until they're fully cooked.</p>
+            <p>4. Stir the sauce in the dish. Cover and microwave for 3 minutes or until hot.</p>
+            <p>5. Pour over the cooked spaghetti pasta.</p>
+            <p>Like?</p>
+            <img src="/Hackathon/PagePics/heart.jpg" alt="Rating" style="width:5%">
+            <h6><b><a href="#opt2" onclick="w3_close()">Not Interested</a></b></h6>
+
+        </div>
+
+    </div>
+    <hr>
+
+    <!--Option Two-->
+    <hr id="opt2">
+
+    <div class="w3-container w3-padding-32 w3-center">
+        <h3>Option Two</h3><br>
+        <img src="/Hackathon/Food/food11.png" alt="Dinner Option 2" style="display:block;margin:auto" width="500" height="200">
+        <div class="w3-padding-32">
+            <h4><b>This is your second dinner option</b></h4>
+            <h6><i>Medium effort</i></h6>
+            <p>Ingredients</p>
+            <p>1/2 cup boiling water</p>
+            <p>1/2 cup rice</p>
+            <p>1/2 cup chopped onion</p>
+            <p>1/4 cup chopped green peppers</p>
+            <p>1/2 tsp. chilli powder</p>
+            <p>1 canned chilli beans</p>
+            <p>1/4 cup shredded cheese</p>
+            <h4>Directions</h4>
+            <p>1. Mix water, uncooked rice, onions, green peppers, and chilli powder in a microwavable container.</p>
+            <p>2. Cover the container and cook on HIGH for 2-3 minutes. Stir in the beans.</p>
+            <p>3. Stir and sprinkle on the cheese. Serve.</p>
+            <p>Like?</p>
+            <img src="/Hackathon/PagePics/heart.jpg" alt="Rating" style="width:5%">
+            <h6><b><a href="#opt3" onclick="w3_close()">Not Interested</a></b></h6>
+        </div>
+    </div>
+    <hr>
+
+    <hr id="opt3">
+
+    <div class="w3-container w3-padding-32 w3-center">
+        <h3>Option Three</h3><br>
+        <img src="/Hackathon/Food/food7.jpg" alt="Dinner Option 3" style="display:block;margin:auto" width="500" height="200">
+        <div class="w3-padding-32">
+            <h4><b>This is your third dinner option</b></h4>
+            <h6><i>Maximum effort</i></h6>
+            <p>Recipe and what not</p>
+            <p>1. Cut the wheat</p>
+            <p>2. Sip some wine</p>
+            <p>3. Destroy the ring in the fires of Mount Doom</p>
+            <p>Like?</p>
+            <img src="/Hackathon/PagePics/heart.jpg" alt="Rating" style="width:5%">
+            <h6><b><a href="thepage.html" onclick="w3_close()">Not Interested</a></b></h6>
+        </div>
+    </div>
+    <hr>
+
+
+
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+</body>
+
+
+</html>
